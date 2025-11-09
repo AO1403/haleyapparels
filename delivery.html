@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="Assets/Logo/logo.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+
+  <title>Checkout/ Haley Apparels</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="parent-container" id="first">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/Logo/logo.png" alt=""></span></a>
+      </div>
+    </div>
+
+
+    <nav class="navbar">
+
+      <div class="parent-container" id="second">
+        <div class="logo">
+          <a href="index.html"><img src="Assets/Logo/logo.png" alt=""></span></a>
+        </div>
+      </div>
+
+      <ul class="nav-links desktop-only">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shirt.html">T-shirts</a></li>
+        <li><a href="hoodie.html">Hoodies</a></li>
+        <li><a href="mug.html">Mugs</a></li>
+        <li><a href="crewneck.html">Crewnecks</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="baseball.html">Baseball Cap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+      </ul>
+
+      <div class="icons">
+        <i class="fas fa-bars menu mobile-only" id="menuToggle"></i>
+        <i class="fas fa-search mobile-search-icon mobile-only" id="mobileSearchToggle"></i>
+        <a href="account.html" class="user-icon"><i class="fas fa-user"></i></a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+
+
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="mobile-search-area mobile-only" id="mobileSearchArea">
+    <input type="text" id="mobileSearchInput" placeholder="Search products..." />
+    <div id="mobileSuggestionsBox" class="suggestions-box"></div>
+  </div>
+
+  <div class="mobile-navbar" id="mobileNavbar">
+    <i class="fas fa-times menu close" id="menuClose"></i>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shirt.html">T-shirts</a></li>
+      <li><a href="hoodie.html">Hoodies</a></li>
+      <li><a href="mug.html">Mugs</a></li>
+      <li><a href="crewneck.html">Crewnecks</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="baseball.html">Baseball Cap</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+
+    </ul>
+  </div>
+
+  <p id="noResults" style="display: none;">No results found. Try a different keyword.</p>
+
+
+
+  <!-- Main Content -->
+  <main>
+    <section class="confirmation-section">
+      <h1> Thank You for Your Order!</h1>
+      <p>your order is being processed.</p>
+      <p><strong>Estimated Delivery:</strong> 3–5 business days</p>
+
+
+
+
+
+      <a href="shop.html" class="cta-button">Continue Shopping</a>
+    </section>
+    <div class="loader-overlay" id="loaderOverlay">
+      <div class="loader"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="parent-container">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/Logo/logo.png" alt=""></span></a>
+      </div>
+    </div>
+    <div class="small-container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Follow</h3>
+          <p>Our Social Media page</p>
+          <div class="app-logo">
+            <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col-4">
+          <h3>Privacy Policy</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shirt.html">T-shirts</a></li>
+            <li><a href="hoodie.html">Hoodies</a></li>
+            <li><a href="mug.html">Mugs</a></li>
+            <li><a href="crewneck.html">Crewnecks</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="baseball.html">Baseball Cap</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="partners">
+
+      <div class="partners-logo">
+        <img src="./Assets/mastercard.JPG" alt="">
+        <img src="./Assets/klarna.JPG" alt="">
+        <img src="./Assets/visa.JPG" alt="">
+        <img src="./Assets/paypal.JPG" alt="">
+      </div>
+    </div>
+    <hr />
+    <p class="Copyright">Copyright &copy; 2025 Haley Apparels</p>
+  </div>
+
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

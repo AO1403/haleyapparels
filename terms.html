@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="Assets/Logo/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <title>REFUND POLICY / Haley Apparels</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="parent-container" id="first">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/Logo/logo.png" alt=""></span></a>
+      </div>
+    </div>
+
+
+    <nav class="navbar">
+
+      <div class="parent-container" id="second">
+        <div class="logo">
+          <a href="index.html"><img src="Assets/Logo/logo.png" alt=""></span></a>
+        </div>
+      </div>
+
+      <ul class="nav-links desktop-only">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shirt.html">T-shirts</a></li>
+        <li><a href="hoodie.html">Hoodies</a></li>
+        <li><a href="mug.html">Mugs</a></li>
+        <li><a href="crewneck.html">Crewnecks</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="baseball.html">Baseball Cap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+
+      </ul>
+
+      <div class="icons">
+        <i class="fas fa-bars menu mobile-only" id="menuToggle"></i>
+        <i class="fas fa-search mobile-search-icon mobile-only" id="mobileSearchToggle"></i>
+        <a href="account.html" class="user-icon"><i class="fas fa-user"></i></a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+
+
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="mobile-search-area mobile-only" id="mobileSearchArea">
+    <input type="text" id="mobileSearchInput" placeholder="Search products..." />
+    <div id="mobileSuggestionsBox" class="suggestions-box"></div>
+  </div>
+
+  <div class="mobile-navbar" id="mobileNavbar">
+    <i class="fas fa-times menu close" id="menuClose"></i>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shirt.html">T-shirts</a></li>
+        <li><a href="hoodie.html">Hoodies</a></li>
+        <li><a href="mug.html">Mugs</a></li>
+        <li><a href="crewneck.html">Crewnecks</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="baseball.html">Baseball Cap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+    </ul>
+  </div>
+
+  <p id="noResults" style="display: none;">No results found. Try a different keyword.</p>
+ 
+ 
+
+<!-- Terms & Conditions Section -->
+<section class="terms-section">
+  <div class="terms-container">
+    <h2>Terms & Conditions</h2>
+    <p>Welcome to Haley Apparels. By accessing or purchasing from our store, you agree to the following terms:</p>
+
+    <ul>
+      <li>All prices are listed in EUR and include applicable VAT.</li>
+      <li>Orders are processed within 1–3 business days, excluding weekends and holidays.</li>
+      <li>We reserve the right to cancel or refuse any order at our discretion.</li>
+      <li>Product colors may vary slightly due to screen settings and lighting.</li>
+      <li>By placing an order, you confirm that all information provided is accurate and complete.</li>
+    </ul>
+
+    <p>Haley Apparels reserves the right to update these terms at any time. Continued use of our website constitutes acceptance of any changes.</p>
+
+    <p>If you have questions regarding our terms, please contact us at <a href="mailto:info@haleyapparels.de">info@haleyapparels.de</a>.</p>
+  </div>
+</section>
+<div class="loader-overlay" id="loaderOverlay">
+    <div class="loader"></div>
+  </div>
+
+<!-- Terms & Conditions CSS -->
+<style>
+  .terms-section {
+    background-color: #fefefe;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .terms-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .terms-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+
+  .terms-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .terms-container ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .terms-container ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .terms-container a {
+    color: #0077cc;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .terms-container {
+      padding: 1rem;
+    }
+
+    .terms-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .terms-container p,
+    .terms-container ul li {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+    
+
+
+
+    <!-- Footer -->
+  <div class="footer">
+    <div class="parent-container">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/Logo/logo.png" alt=""></span></a>
+      </div>
+    </div>
+    <div class="small-container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Follow</h3>
+          <p>Our Social Media page</p>
+          <div class="app-logo">
+            <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col-4">
+          <h3>Privacy Policy</h3>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shirt.html">T-shirts</a></li>
+        <li><a href="hoodie.html">Hoodies</a></li>
+        <li><a href="mug.html">Mugs</a></li>
+        <li><a href="crewneck.html">Crewnecks</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="baseball.html">Baseball Cap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+          <div class="partners">
+            
+            <div class="partners-logo">
+                <img src="./Assets/mastercard.JPG" alt="">
+                <img src="./Assets/klarna.JPG" alt="">
+                <img src="./Assets/visa.JPG" alt="">
+                <img src="./Assets/paypal.JPG" alt="">
+            </div>
+        </div>
+        <hr />
+            <p class="Copyright">Copyright &copy; 2025 Haley Apparels</p>
+  </div>
+
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
