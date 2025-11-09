@@ -404,7 +404,7 @@ header {
 @media (max-width:468px) {
   .carousel {
   position: relative;
-  height: 40vh;
+  height: 50vh;
   overflow: hidden;
 }
 }
@@ -1801,3 +1801,4 @@ p, li, span, a {
     width: 100%;
   }
 }
+
